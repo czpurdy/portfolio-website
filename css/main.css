@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("/images/rainforest.jpg");
+    background: url("./images/rainforest.jpg");
     background-size: cover;
   } @media only screen and (max-width: 940px) {
     .content-single {
@@ -23,7 +23,7 @@
   }
 
   .background {
-    background: url("/images/rainforest.jpg");
+    background: url("./images/rainforest.jpg");
     background-size: cover;
   }
 
@@ -183,7 +183,7 @@
   }
 
   #about-me {
-    background-image: url("/images/bearlake.jpg");
+    background-image: url("./images/bearlake.jpg");
     height: 100vh;
     background-size: cover;
     display: flex;
@@ -257,23 +257,23 @@
   }
 
   #slide-1 {
-    background-image: url("/images/swamp.jpg");
+    background-image: url("./images/swamp.jpg");
   }
 
   #slide-2{
-    background-image: url("/images/arches.jpg");
+    background-image: url("./images/arches.jpg");
   }
 
   #slide-3{
-    background-image: url("/images/gunnison.jpg");
+    background-image: url("./images/gunnison.jpg");
   }
 
   #slide-4{
-    background-image: url("/images/students-flipped.jpg");
+    background-image: url("./images/students-flipped.jpg");
   }
 
   #contact{
-    background-image: url("/images/rainbow.jpg");
+    background-image: url("./images/rainbow.jpg");
     justify-content: center;
     align-items: center;
   }

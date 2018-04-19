@@ -233,14 +233,14 @@ $(document).ready(function(){
   (function($) {
     // construct the divs for 
       if(document.location.pathname.match(/[^\/]+$/)[0] === "photo.html"){
-        $.getJSON('/images/photo-gallery/gallery.json', function( data ) {
+        $.getJSON('./images/photo-gallery/gallery.json', function( data ) {
 
           keysSorted = Object.keys(data).sort(function(a,b){return Date.parse(data[a].capture_datetime)-Date.parse(data[b].capture_datetime)});
 
           keysSorted.forEach(element => {
 
             $('#photo-gallery').append($([
-              '<a class="fancybox come-in-effect" data-fancybox="gallery" data-filter="',data[element].keywords.join(' '),'"  href="/images/photo-gallery/',element,'"><img class="thumbnail" src="/images/photo-gallery/thumbnails/',element.split('.')[0],'.thumbnail"></a>'
+              '<a class="fancybox come-in-effect" data-fancybox="gallery" data-filter="',data[element].keywords.join(' '),'"  href="./images/photo-gallery/',element,'"><img class="thumbnail" src="./images/photo-gallery/thumbnails/',element.split('.')[0],'.thumbnail"></a>'
             ].join("")));
           });
   
