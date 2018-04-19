@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Photography - Christine Z. Purdy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    
+    <!-- External css files -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet"/>
+    <link href="/css/animate.css" rel="stylesheet"/>
+    <link href="/css/waypoints.css" rel="stylesheet"/>
+    <link href="/css/main.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+    
+    <!-- External fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="navHeader">
+            <!-- Nav Bar -->
+            <input type="checkbox" id="mNav" style="display: none">
+            <label for="mNav" class="menustate"><span></span></label>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="photo.html">Photography</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a id='contactLink' href="index.html#contact">Get In Touch</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content-long">
+
+        <div id="gallery-tab">
+            <a data-rel="all"  href="javascript:;" class="filter active">View all</a>
+            <a data-rel="Animal" href="javascript:;" class="filter">Animals</a>
+            <a data-rel="Water" href="javascript:;" class="filter">Water</a>
+            <a data-rel="Rainforest" href="javascript:;" class="filter">Rainforest</a>
+            <a data-rel="Swamp" href="javascript:;" class="filter">Swamp</a>
+            <a data-rel="Ocean" href="javascript:;" class="filter">Ocean</a>
+            <a data-rel="River" href="javascript:;" class="filter">River</a>
+            <a data-rel="Hydrothermal" href="javascript:;" class="filter">Hydrothermal</a>
+            <a data-rel="Tree" href="javascript:;" class="filter">Trees</a>
+            <a data-rel="Rock" href="javascript:;" class="filter">Rock</a>
+            <a data-rel="Canyon" href="javascript:;" class="filter">Canyon</a>
+            <a data-rel="Badlands" href="javascript:;" class="filter">Badlands</a>
+            <a data-rel="Mountain" href="javascript:;" class="filter">Mountains</a>
+            <a data-rel="Scenic Drive" href="javascript:;" class="filter">Scenic Drive</a>
+        </div>
+        
+        <div id="photo-gallery"></div>
+
+    </div>
+    
+    <footer>
+        <h6>Christine Purdy &copy; 2018</h6>
+    </footer>
+</div>
+
+<!-- Javascript, jQuery -->
+<script src="/js/pdfobject.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/jquery.waypoints.min.js" type="text/javascript"></script>
+<script src="/js/waypoints.js" type="text/javascript"></script>
+<script src="/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+</body>
