@@ -234,7 +234,7 @@ $(document).ready(function(){
     // construct the divs for fancybox photos
     let currpath = document.location.pathname.match(/[^\/]+$/);
     if(currpath && currpath[0] === "photo.html"){
-      $.getJSON('../images/photo-gallery/gallery.json', function( data ) {
+      $.getJSON('./images/photo-gallery/gallery.json', function( data ) {
 
         keysSorted = Object.keys(data).sort(function(a,b){return Date.parse(data[a].capture_datetime)-Date.parse(data[b].capture_datetime)});
 
