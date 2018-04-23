@@ -97,7 +97,7 @@ $(document).ready(function(){
     // Get the offset position of the navbar
     let sticky = header.offsetTop;
 
-    if (currentPage === "index") {
+    if (currentPage === "index" || currentPage === "") {
       if (window.pageYOffset >= sticky && document.body.clientWidth >= 940) {
         nav.classList.add("sticky");
       } else {
