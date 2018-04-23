@@ -231,22 +231,22 @@ $(document).ready(function(){
   })(jQuery); // ready
 
   (function($) {
-    // construct the divs for 
-      if(document.location.pathname.match(/[^\/]+$/)[0] === "photo.html"){
-        $.getJSON('./images/photo-gallery/gallery.json', function( data ) {
+    // construct the divs for fancybox photos
+    let currpath = document.location.pathname.match(/[^\/]+$/);
+    if(currpath && currpath[0] === "photo.html"){
+      $.getJSON('../images/photo-gallery/gallery.json', function( data ) {
 
-          keysSorted = Object.keys(data).sort(function(a,b){return Date.parse(data[a].capture_datetime)-Date.parse(data[b].capture_datetime)});
+        keysSorted = Object.keys(data).sort(function(a,b){return Date.parse(data[a].capture_datetime)-Date.parse(data[b].capture_datetime)});
 
-          keysSorted.forEach(element => {
+        keysSorted.forEach(element => {
 
-            $('#photo-gallery').append($([
-              '<a class="fancybox come-in-effect" data-fancybox="gallery" data-filter="',data[element].keywords.join(' '),'"  href="./images/photo-gallery/',element,'"><img class="thumbnail" src="./images/photo-gallery/thumbnails/',element.split('.')[0],'.thumbnail"></a>'
-            ].join("")));
-          });
-  
-          
+          $('#photo-gallery').append($([
+            '<a class="fancybox come-in-effect" data-fancybox="gallery" data-filter="',data[element].keywords.join(' '),'"  href="../images/photo-gallery/',element,'"><img class="thumbnail" src="../images/photo-gallery/thumbnails/',element.split('.')[0],'.thumbnail"></a>'
+          ].join("")));
         });
-      }
-    })(jQuery);
 
+        
+      });
+    }
+  })(jQuery);
 }); //ready
