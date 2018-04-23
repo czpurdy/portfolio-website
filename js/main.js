@@ -241,7 +241,7 @@ $(document).ready(function(){
         keysSorted.forEach(element => {
 
           $('#photo-gallery').append($([
-            '<a class="fancybox come-in-effect" data-fancybox="gallery" data-filter="',data[element].keywords.join(' '),'"  href="../images/photo-gallery/',element,'"><img class="thumbnail" src="../images/photo-gallery/thumbnails/',element.split('.')[0],'.thumbnail"></a>'
+            '<a class="fancybox come-in-effect" data-fancybox="gallery" data-filter="',data[element].keywords.join(' '),'"  href="./images/photo-gallery/',element,'"><img class="thumbnail" src="./images/photo-gallery/thumbnails/',element.split('.')[0],'.thumbnail"></a>'
           ].join("")));
         });
 
