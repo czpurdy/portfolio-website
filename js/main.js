@@ -193,11 +193,11 @@ $(document).ready(function(){
   // Resume options
   let options = {
     pdfOpenParams: { pagemode: 'none', scrollbar: '1', toolbar: '1'},
-    fallbackLink: '<p>This browser does not support inline PDFs. Please download the PDF to view it: <a href="/documents/CZPurdy_Resume.pdf">Download PDF</a></p>',
+    fallbackLink: '<p>This browser does not support inline PDFs. Please download the PDF to view it: <a href="./documents/CZPurdy_Resume.pdf">Download PDF</a></p>',
     PDFJS_URL: "./pdfjs/web/viewer.html"
   };
   // Embed resume
-  PDFObject.embed("/documents/CZPurdy_Resume.pdf", "#resume", options);
+  PDFObject.embed("./documents/CZPurdy_Resume.pdf", "#resume", options);
 
   // Fancybox Filtering
   (function($) {
