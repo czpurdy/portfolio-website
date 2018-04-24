@@ -97,7 +97,7 @@ $(document).ready(function(){
     // Get the offset position of the navbar
     let sticky = header.offsetTop;
 
-    if (currentPage === "index" || currentPage === "") {
+    if (currentPage === "index" || currentPage === "" || currentPage === "#about") {
       if (window.pageYOffset >= sticky && document.body.clientWidth >= 940) {
         nav.classList.add("sticky");
       } else {
@@ -139,6 +139,7 @@ $(document).ready(function(){
   $('#form-close, .form-overlay').click(function(e) {
     e.stopPropagation();
     e.preventDefault();
+    $('#my_iframe').hide();
     toggleForm();
     bindFormClick();
   });
@@ -148,6 +149,7 @@ $(document).ready(function(){
     $(formContainer).children().toggleClass('expand');
     $('body').toggleClass('show-form-overlay');
     $('.form-submitted').removeClass('form-submitted');
+    $('form').show();
   }
 
   //Form validation
@@ -175,14 +177,20 @@ $(document).ready(function(){
       form.hide();
       $('#my_iframe').show();
       form.submit();
-
-      // $('body').addClass('form-submitted');
-      // $('#form-head').addClass('form-submitted'); 
-      // setTimeout(function(){
-      //   $(form).trigger("reset");
-      // }, 1000);
     }
     return false;
+  });
+
+  $('#my_iframe').on('load', function() {
+    try {
+      $(this)[0].contentWindow.location.href
+      $('#my_iframe').hide();
+      $('body').addClass('form-submitted');
+      $('#form-head').addClass('form-submitted'); 
+      setTimeout(function(){
+        $('form').trigger("reset");
+      }, 1000);
+    } catch (error) {}
   });
 
   function isValidEmail(email) {
