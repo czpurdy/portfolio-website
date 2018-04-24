@@ -237,8 +237,12 @@ $(document).ready(function(){
   }); // on
   })(jQuery); // ready
 
+  // Fancybox -- construct divs for photos
   (function($) {
-    // construct the divs for fancybox photos
+    let fancyboxOptions = {
+      "protect": true
+    };
+
     let currpath = document.location.pathname.match(/[^\/]+$/);
     if(currpath && currpath[0] === "photo.html"){
       $.getJSON('./images/photo-gallery/gallery.json', function( data ) {
@@ -248,7 +252,15 @@ $(document).ready(function(){
         keysSorted.forEach(element => {
 
           $('#photo-gallery').append($([
-            '<a class="fancybox come-in-effect" data-fancybox="gallery" data-filter="',data[element].keywords.join(' '),'"  href="./images/photo-gallery/',element,'"><img class="thumbnail" src="./images/photo-gallery/thumbnails/',element.split('.')[0],'.thumbnail"></a>'
+            "<a class='fancybox come-in-effect' data-options='"
+            ,JSON.stringify(fancyboxOptions),
+            "' data-fancybox='gallery' data-filter='"
+            ,data[element].keywords.join(' '),
+            "'  href='./images/photo-gallery/"
+            ,element,
+            "'><img class='thumbnail' src='./images/photo-gallery/thumbnails/"
+            ,element.split('.')[0],
+            ".thumbnail'></a>"
           ].join("")));
         });
 
