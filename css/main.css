@@ -5,6 +5,11 @@
     padding: 0px;
     background: black;
   }
+  body:after {
+    position:fixed;
+    height:100vh;
+    z-index:-1;
+  }
 
   .content-single {
     height: calc(100% - 120px);
