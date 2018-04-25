@@ -55,7 +55,7 @@
   }
 
   h1 {
-    font-family: "Open Sans";
+    font-family: "Avenir Next", Avenir, Roboto, sans-serif;
     font-size: 10vh;
     font-weight:normal;
     text-align: center;
@@ -85,7 +85,7 @@
   }
 
   h2 {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Avenir Next", Avenir, Roboto, sans-serif;
     font-weight: normal;
     font-size: 9vh;
     text-align: center;
@@ -127,7 +127,7 @@
   }
 
   h4 {
-    font-family: "Roboto";
+    font-family: "Avenir Next", Avenir, Roboto, sans-serif;
     font-weight: normal;
     font-size: 1.75em;
     text-align: center;
@@ -139,7 +139,7 @@
   }
 
   h5 {
-    font-family: "Roboto";
+    font-family: "Avenir Next", Avenir, Roboto, sans-serif;
     font-weight: normal;
     font-size: 3vh;
     text-align: center;
@@ -151,7 +151,7 @@
   } 
 
   h6 {
-    font-family: "Roboto";
+    font-family: "Avenir Next", Avenir, Roboto, sans-serif;
     font-weight: normal;
     font-size: 1em;
     text-align: center;
@@ -163,7 +163,7 @@
   } 
 
   p {
-    font-family: "Avenir";
+    font-family: "Avenir Next", Avenir, Roboto, sans-serif;
     line-height: 1.3em;
     color: lightgray;
   }
@@ -549,7 +549,7 @@
     height: 80px;
     /* border-bottom: 1px solid rgba(255, 255, 255, 0.15); */
     width: 100%;
-    font-family: "Avenir Next", Avenir, Arial, sans-serif; 
+    font-family: "Avenir Next", Avenir, Roboto, sans-serif; 
   } @media screen and (max-width: 940px) {
       nav {
         /* visibility: hidden; */
@@ -829,7 +829,7 @@
   }
   
   #form-content {
-    font-family: Roboto, sans-serif;
+    font-family: "Avenir Next", Avenir, Roboto, sans-serif;
     -webkit-transform: translateY(150%);
             transform: translateY(150%);
     width: 100%;
@@ -1150,7 +1150,7 @@
     font-size: 1.25rem;
     transition: color .25s ease-out;
     font-variant: small-caps;
-    font-family: "Avenir Next", Avenir, sans-serif;
+    font-family: "Avenir Next", Avenir, Roboto, sans-serif;
     color: rgba(155, 153, 153, 0.541);
   } @media only screen and (max-width: 940px) {
     #gallery-tab a {
